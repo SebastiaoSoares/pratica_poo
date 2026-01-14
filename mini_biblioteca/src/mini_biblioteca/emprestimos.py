@@ -13,5 +13,8 @@ class Emprestimo:
         livro.disponivel = False
         return cls(usuario, livro)
 
+    def devolver_livro(self):
+        self._livro.disponivel = True
+
     def __str__(self):
         return f"Empréstimo de '{self._livro.titulo}' para {self.usuario.nome}"

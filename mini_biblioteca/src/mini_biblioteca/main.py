@@ -12,6 +12,12 @@ def main():
 
     emprestimo1 = Emprestimo(usuario1, livro1)
     emprestimo2 = Emprestimo(usuario2, livro2)
+
+    print(emprestimo1)
+    print(emprestimo2)
+
+    emprestimo1.devolver_livro()
+    print(f"Após devolução: {livro1}")
     
 if __name__ == "__main__":
     main()
